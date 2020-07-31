@@ -10,7 +10,11 @@ When reading tutorials, CPU manuals, or academic papers about fast implementatio
 
 Simple Intrinsics is a tool that generates C++ names for C# intrinsics and packs them into Upper Cased versions of original classes. The classes are already pre-generated from a C# file containing the intrinsic classes (from dotnet core sources)
 
-The generated code is under the: "Intrinsics" directory. You can take them and start using them. If you need more methods that, for some reason, are not mapped, you can grab the newest source code version of the intrinsic and generate them again.
+The generated code is under the: "Intrinsics" directory:
+
+https://github.com/badamczewski/SimpleIntrinsics/tree/master/SimpleIntrinsics/Intrinsics
+
+You can take them and start using them. If you need more methods that, for some reason, are not mapped, you can grab the newest source code version of the intrinsic and generate them again.
 
 ## How?
 
@@ -18,7 +22,7 @@ The tool uses a CSharp parser and a custom Comment parser to create a C#/C++ sig
 
 ![obraz](https://user-images.githubusercontent.com/752380/89056729-c5f76c00-d35c-11ea-878a-0a7a3547d36f.png)
 
-This allows us to create a method with C++ semantics and alias all of the types to their native counterparts if needed (not yet done). The pairs are then fed to the code generator that uses them and a bunch of options to generate code for the renamed intrinsics.
+This allows us to create a method with C++ semantics and alias all of the types to their native counterparts if needed (not yet done). The pairs are then fed to the code generator that uses them (and a bunch of options) to generate code for the renamed intrinsics.
 
 ## Drawbacks
 
